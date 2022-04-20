@@ -1,0 +1,147 @@
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #161B21;
+  color: #F4A950;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+/*#muttonbriyani{
+  background-image: url('./muttonbriyani.jpg');
+  background-size: 100% 100%;
+}*/
+.sidenav input[type=text] {
+    padding: 10px;
+    width:160px;
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.sidenav a{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+}
+.sidenav p{
+  font-size: 15px;
+  color: #F4A950;
+  display: inline;
+}
+.sidenav .table{
+  margin-top: 5px;
+  width: 160px;
+  height: 60px;
+  padding: 10px;
+  background-color: #161B21;
+  color: #F4A950;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.table:hover , .myBtn:hover,.myBtn1:hover{
+  background-color: #818181;
+}
+body{
+  background-color: #161B21;
+  color: #F4A950;
+}
+
+.main{
+  margin-left: 200px;
+  background-color: #161B21;
+  color: #F4A950;
+  height: 100%;
+  padding: 0px 10px;
+}
+.main input[type=text]{
+    width:100%;
+    font-size:20px;
+    padding: 15px;
+}
+.item{
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 160px;
+  height: 100px;
+  padding: 15px;
+  background-color: #161B21;
+  color: #F4A950;
+  border-style: solid;
+  border-width: 2px;
+  /*box-shadow: 5px 5px 3px #F4A950;*/
+}
+
+.itemPrice{
+    float: left;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;  
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #161B21;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.myBtn, .myBtn1{
+  padding: 5px;
+  border: none;
+  background-color: #161B21;
+  color: #F4A950;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.modal-content .myBtn1{
+  float:right;
+}
+table, th, td {
+  border: 1px solid;
+  text-align: center;
+}
+

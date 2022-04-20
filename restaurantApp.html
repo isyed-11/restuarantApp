@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Restaurant App</title>
+        <link rel="stylesheet" href="./styleApp.css">     
+    </head>
+    <body>
+        <div class="sidenav">
+            <h1>Tables</h1>
+            <input type="text" placeholder="Search table..">
+            <!--table1-->
+            <div class="table" id="table1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <button class="myBtn" onclick="document.getElementsByClassName('modal')[0].style.display='block'">Table1</button>
+                <div class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementsByClassName('modal')[0].style.display='none'">&times;</span>
+                    <h2>Table 1</h2>
+                    <h3>Items:</h3>
+                    <p id="table1Items"></p>
+                    <button class="myBtn1" id="table1CheckOut" onclick="makeTotalZero(event)">Checkout</button>
+                </div>
+
+                </div>
+                <br>
+                <p>Total:</p>
+                <p id="table1total"></p>
+                <p>Items:</p>
+                <p id="table1ItemCount"></p>
+            </div>
+            <!--table2-->
+            <div class="table" id="table2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <button class="myBtn" onclick="document.getElementsByClassName('modal')[1].style.display='block'">Table2</button>
+                <div class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementsByClassName('modal')[1].style.display='none'">&times;</span>
+                    <h2>Table 2</h2>
+                    <h3>Items:</h3>
+                    <p id="table2Items"></p>
+                    <button class="myBtn1" id="table2CheckOut" onclick="makeTotalZero(event)">Checkout</button>
+                </div>
+
+                </div>
+                <br>
+                <p>Total:</p>
+                <p id="table2total"></p>
+                <p>Items:</p>
+                <p id="table2ItemCount"></p>
+            </div>
+            <!--table 3-->
+            <div class="table" id="table3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <button class="myBtn" onclick="document.getElementsByClassName('modal')[2].style.display='block'">Table3</button>
+                <div class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementsByClassName('modal')[2].style.display='none'">&times;</span>
+                    <h2>Table 3</h2>
+                    <h3>Items:</h3>
+                    <p id="table3Items"></p>
+                    <button class="myBtn1" id="table3CheckOut" onclick="makeTotalZero(event)">Checkout</button>
+                </div>
+
+                </div>
+                <br>
+                <p>Total:</p>
+                <p id="table3total"></p>
+                <p>Items:</p>
+                <p id="table3ItemCount"></p>
+            </div>
+            <!--Table 4-->
+            <div class="table" id="table4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <button class="myBtn" onclick="document.getElementsByClassName('modal')[3].style.display='block'">Table4</button>
+                <div class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementsByClassName('modal')[3].style.display='none'">&times;</span>
+                    <h2>Table 4</h2>
+                    <h3>Items:</h3>
+                    <p id="table4Items"></p>
+                    <button class="myBtn1" id="table4CheckOut" onclick="makeTotalZero(event)">Checkout</button>
+                </div>
+
+                </div>
+                <br>
+                <p>Total:</p>
+                <p id="table4total"></p>
+                <p>Items:</p>
+                <p id="table4ItemCount"></p>
+            </div>
+        </div>
+        <div class="main">
+            <h1 style="text-align: center;">Z Restaurant</h1>
+            <input type="text" id="searchmenu" placeholder="Search menu.." onkeyup="search()">
+            <h1>Menu:</h1>
+            <div class="menu">
+                <!--<div class="item" id="muttonbriyani" value="150" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName">Mutton Briyani</p>
+                    <p class="itemPrice">Price:150</p>
+                </div>
+                <div class="item" id="chickenbriyani" value="120" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >Chicken Briyani</p>
+                    <p class="itemPrice">Price:120</p>
+                </div>
+                <div class="item" id="chicken65" value="140" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >Chicken 65</p>
+                    <p class="itemPrice">Price:140</p>
+                </div>
+                <div class="item" id="chickentikka" value="160" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >Chicken Tikka</p>
+                    <p class="itemPrice">Price:160</p>
+                </div>
+                <div class="item" id="rumaliroti" value="15" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >Rumali Roti</p>
+                    <p class="itemPrice">Price:15</p>
+                </div>
+                <div class="item" id="waterbottle" value="20" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >Water Bottle</p>
+                    <p class="itemPrice">Price:20</p>
+                </div>-->
+            </div>
+            </div>
+
+        </div>
+        <script src="./scriptApp.js"></script>
+    </body>
+</html>
